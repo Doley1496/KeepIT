@@ -21,7 +21,7 @@ export const generateTokens = async (res, user) => {
       httpOnly: true, // accessible only by the web server
 
       secure: true, // for https
-      sameSite: "lax", // cross-site cookie
+      sameSite: "none", // cross-site cookie for https
       path: "/",
     });
 
@@ -36,9 +36,11 @@ export const generateTokens = async (res, user) => {
     // res.cookie("refreshToken", refreshToken, {
     //   expires: new Date(Date.now() + 60000), // 1minute
     //   httpOnly: true, // accessible only by the web server
-    //   sameSite: "lax", // cross-site cookie
+    //   sameSite: "lax", // cross-site cookie for http
     //   path: "/",
 
+    //    //  sameSite: "lax", // cross-site cookie for http
+    //   //  sameSite: "none", // cross-site cookie for https
     //   // secure: true // for https
     //   // maxAge: 7 * 24 * 60 * 60 * 1000, // expiry time
 
