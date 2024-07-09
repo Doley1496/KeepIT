@@ -42,7 +42,7 @@ const corsOptions = {
 
     const allowedOrigins = [
       "http://localhost:5173",
-      "https://keep-it-blue.vercel.app",
+      "https://keep-it-ten.vercel.app",
     ];
 
     const isAllowed = allowedOrigins.includes(origin);
