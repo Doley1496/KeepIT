@@ -169,7 +169,7 @@ export default function SignInPage() {
             {/* Creating a heading for the signIn page. */}
 
             <div>
-              <h1 className="text-4xl text-center font-bold font-sans my-7 text-orange-950 responsive-heading">
+              <h1 className="text-[30px] text-center font-bold font-sans my-7 text-orange-950 responsive-heading">
                 Welcome Back
               </h1>
 
@@ -289,7 +289,10 @@ export default function SignInPage() {
             {/* Creating a link to go to the /resetPassword page to reset the password. */}
 
             <Link to="/sendLink">
-              <p className="m-3 mt-6 text-[18px] font-bold font-sans text-slate-700 hover:underline cursor-pointer">
+              <p
+                className="m-3 pt-[20px] text-[18px] font-bold font-sans text-slate-700 hover:underline 
+                cursor-pointer"
+              >
                 Reset Password
               </p>
             </Link>

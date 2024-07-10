@@ -18,7 +18,15 @@ export default function HomePage() {
       <Layout title={"Home-Page"}>
         {/* */}
 
-        <div className="py-20 px-4 max-w-10xl h-[700px] mx-auto text-center bg-image3 ">
+        <div
+          className="py-20 px-4 max-w-10xl h-[700px] mx-auto text-center"
+          style={{
+            backgroundImage: "url(/images/todo2.jpg)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundBlendMode: "color-burn",
+          }}
+        >
           {/* */}
 
           <div
@@ -29,15 +37,18 @@ export default function HomePage() {
           >
             {/* */}
 
-            <h1 className="text-center text-7xl mb-7 text-bold text-red-700">
+            <h1 className="text-center text-7xl mb-7 font-extrabold leading-14 text-[#db343c]">
               Organize your <br /> work and life <br />
               at an efficient way
               <br />
             </h1>
 
-            <h1 className="mb-7 font-bold font-sans leading-[35px] text-3xl text-[#1a080f] responsive-text">
-              Make your everyday work done. <br /> Single app that will make
-              your life to <br />
+            <h1
+              className="mb-7 font-bold font-sans leading-[35px] text-4xl text-[#06040A] 
+            bg-[white] py-[30px] w-[50%] mx-auto rounded-lg responsive-text"
+            >
+              Make your everyday work done <br /> Single app that will make your
+              life to <br />
               remember of all your things to be done
             </h1>
 
@@ -54,9 +65,9 @@ export default function HomePage() {
           >
             <button
               className="bg-slate-900 text-gray-300 px-5 py-4 text-4xl rounded-lg uppercase hover:opacity-95 
-              disabled:opacity-80 font-sans font-semibold w-[30%] responsive-button"
+              disabled:opacity-80 font-sans font-semibold w-[30%] hover:bg-[#3dbe68] responsive-button"
             >
-              Make Todo List
+              Create Todo List
             </button>
 
             {/* */}
@@ -91,13 +102,19 @@ const Wrapper = styled.section`
     .responsive-text {
       font-size: 2.4rem;
       line-height: 1.6;
+      margin: auto;
+      width: 100%;
     }
 
     .responsive-button {
-      font-size: 3rem;
+      margin-top: 20px;
+      font-size: 3.4rem;
       font-weight: bold;
-      width: 75%;
-      height: 70px;
+      width: 100%;
+      height: 80px;
+
+      background: #ffffff;
+      color: #db343c;
     }
 
     /* */
