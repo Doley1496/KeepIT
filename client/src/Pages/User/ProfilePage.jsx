@@ -645,7 +645,7 @@ export default function ProfilePage() {
               className="bg-slate-700 text-white rounded-lg mb-5 uppercase hover:opacity-95
               disabled:opacity-80 w-[100%] text-[20px] mt-4 py-[18px] font-bold font-sans"
             >
-              {loading ? "Loading..." : "Update"}
+              {Loading ? "Loading..." : "Update"}
             </button>
 
             {/* */}

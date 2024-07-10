@@ -156,28 +156,6 @@ export default function SendLink() {
               ref={emailRef}
             />
 
-            {/* *************  Creating a button to Reset the password.  **************** */}
-
-            <div className="justify-between mb-4">
-              <button
-                // onClick={sendOTP}
-                disabled={loading}
-                className="bg-red-700 text-gray-300 py-2 px-4 rounded-lg uppercase hover:opacity-95 
-                disabled:opacity-80 text-[17px] font-sans font-bold ml-2 mr-[20px] hover:underline "
-              >
-                {loading ? "Loading..." : "Send Link"}
-              </button>
-
-              <Link
-                to="/signIn"
-                disabled={loading}
-                className="bg-black text-gray-300 px-[19px] py-[10px] rounded-lg uppercase hover:opacity-95 
-                disabled:opacity-80 text-[17px] font-sans font-bold ml-[180px] responsive-button"
-              >
-                {loading ? "Loading..." : "Back"}
-              </Link>
-            </div>
-
             {/* ***************************************** */}
             {/* Creating a button to Reset the password : */}
 
