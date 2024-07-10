@@ -239,8 +239,8 @@ export const SignOutController = async (req, res, next) => {
 
     res.clearCookie("accessToken", {
       httpOnly: true,
-      sameSite: "lax",
       path: "/",
+      sameSite: "none",
       secure: true, // for https
     });
 

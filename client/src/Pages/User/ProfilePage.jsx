@@ -54,9 +54,9 @@ export default function ProfilePage() {
 
   const [Inputs, setInputs] = useState({});
 
-  const { currentUser, loading } = useSelector((state) => state.user);
+  const { currentUser } = useSelector((state) => state.user);
 
-  const [Loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const [updatedMessage, setUpdatedMessage] = useState(false);
 
@@ -641,11 +641,10 @@ export default function ProfilePage() {
             {/* Creating a button to Update the user-profile details. */}
 
             <button
-              disabled={loading}
               className="bg-slate-700 text-white rounded-lg mb-5 uppercase hover:opacity-95
               disabled:opacity-80 w-[100%] text-[20px] mt-4 py-[18px] font-bold font-sans"
             >
-              {Loading ? "Loading..." : "Update"}
+              {loading ? "Loading..." : "Update"}
             </button>
 
             {/* */}
